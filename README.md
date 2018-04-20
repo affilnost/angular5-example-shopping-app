@@ -8,7 +8,7 @@
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
 ## [LIVE DEMO](https://affilnost.github.io/angular5-example-shopping-app/)
-[![angular-example-shopping-app](https://affilnost.github.io/angular5-example-shopping-app/assets/images/angular-app-screen.png)](https://affilnost.github.io/angular5-example-shopping-app/)
+[![angular-example-shopping-app](https://goo.gl/kjy8Ph)](https://affilnost.github.io/angular5-example-shopping-app/)
 
 ## UI Description
 The app provides a possibility to maintain shopping lists.
