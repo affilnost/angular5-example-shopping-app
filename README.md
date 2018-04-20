@@ -1,4 +1,14 @@
-# Shopping Lists Example App Angular 5
+# Angular 5 Example Shopping App + Angular Material + Responsive
+
+> ### Project made with :heart: 
+
+[![Join the chat at https://gitter.im/Angular-5-Example-Shopping-App/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Angular-5-Example-Shopping-App/Lobby)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
+
+## [LIVE DEMO](https://affilnost.github.io/angular5-example-shopping-app/)
+[![angular-example-shopping-app](https://affilnost.github.io/angular5-example-shopping-app/assets/images/angular-app-screen.png)](https://affilnost.github.io/angular5-example-shopping-app/)
 
 ## UI Description
 The app provides a possibility to maintain shopping lists.
@@ -40,7 +50,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 
 ## Possible Issues / Improvements
@@ -53,8 +63,17 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Create an issue with bug/feature description
 * If it's a small fix - just send a pull-request
 
+## Deploying to GitHub Pages
+First build the project:
+`npm run build`
+
+Then run:
+`npm run deploy-to-ghpages`
+
 ## License
 MIT
+
+Enjoy :stuck_out_tongue_winking_eye:
 
 
 
