@@ -22,15 +22,13 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {SharedModule} from './shared/shared.module';
 
 import {StateService} from './services/state/state.service';
-import {SidebarComponent} from './core/sidebar/sidebar.component';
 import {APP_CONFIG, AppConfig} from './config/app.config';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    SidebarComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
