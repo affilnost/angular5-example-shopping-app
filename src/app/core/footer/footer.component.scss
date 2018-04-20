@@ -1,0 +1,20 @@
+footer {
+  padding: 8px 16px;
+  color: white;
+  background: #3f51b5;
+  margin-top: 2em;
+  position: sticky;
+  top: 100%;
+  .copyright {
+    margin: 1em 0 1em;
+    font-size: 0.7em;
+  }
+  img {
+    width: 25%;
+  }
+}
+
+.footer-xs {
+  text-align: center;
+  padding-top: 1em;
+}

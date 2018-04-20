@@ -1,0 +1,45 @@
+<div class="left-col">
+  <h2 class="section-title">{{ 'shoppingLists' | translate }}</h2>
+  <div>
+    <mat-progress-spinner *ngIf="!shoppingLists"
+                          class="progress-spinner"
+                          [color]="'primary'"
+                          [mode]="'indeterminate'">
+    </mat-progress-spinner>
+    <mat-list>
+      <mat-list-item class="shopping-list-item" *ngFor="let shoppingList of shoppingLists">
+        <img class="cp"
+             (click)="seeShoppingListDetails(shoppingList);" mat-list-avatar
+             src="assets/images/shopping-lists/cart7.png">
+        <h3 mat-line class="cp" (click)="seeShoppingListDetails(shoppingList);"> {{shoppingList.name}} </h3>
+        <div class="sl-actions">
+          <mat-icon class="remove-icon"
+                    (click)="remove(shoppingList);">
+            delete
+          </mat-icon>
+          <mat-icon class="edit-icon"
+                    (click)="seeShoppingListDetails(shoppingList);">
+            edit
+          </mat-icon>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
+<div class="right-col">
+  <h2 class="section-title">{{ 'createShoppingList' | translate }}</h2>
+  <div>
+    <form [formGroup]="newShoppingListForm" #form="ngForm" (ngSubmit)="createNewShoppingList(newShoppingListForm.value)">
+      <mat-input-container class="input-container">
+        <input matInput type="text"
+               placeholder="{{'name' | translate}}"
+               formControlName="name">
+      </mat-input-container>
+
+      <button mat-raised-button type="submit" [disabled]="!newShoppingListForm.valid">
+        {{'create' | translate}}
+      </button>
+    </form>
+  </div>
+</div>
+<div class="clear"></div>

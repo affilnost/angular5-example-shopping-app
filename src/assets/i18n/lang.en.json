@@ -1,0 +1,38 @@
+{
+  "Pages": {
+    "Dashboard": {
+      "Title": "Dashboard",
+      "Headline": "Welcome",
+      "welcomeText": "Here you can create and edit your shopping lists:"
+    },
+    "Shopping": {
+      "Title": "Shopping",
+      "Headline": "Welcome to Shopping"
+    },
+    "ShoppingList": {
+      "Title": "Shopping List"
+    }
+  },
+  "error404": "404 Error",
+  "angularShoppingListsApp": "Shopping Lists App",
+  "shoppingLists": "Shopping lists",
+  "shoppingListCreated": "Shopping list is created",
+  "saved": "Saved",
+  "shoppingListRemoved": "Shopping list is removed",
+  "shoppingListDefault": "It's a default shopping list, you cannot delete it",
+  "createShoppingList": "Create shopping list",
+  "removeShoppingList": "Remove shopping list",
+  "areYouSure": "Are you sure?",
+  "name": "Name",
+  "create": "Create",
+  "yes": "Yes",
+  "no": "No",
+  "availableProducts": "Available products",
+  "addToShoppingList": "Add to shopping list",
+  "productSearch": "Search products",
+  "productAdded": "The product is added",
+  "productRemovedFromShoppingList": "The product is removed",
+  "removeFromShoppingList": "Remove from shopping list",
+  "shoppingListName": "Shopping list name",
+  "save": "Save"
+}

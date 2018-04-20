@@ -1,0 +1,38 @@
+{
+  "Pages": {
+    "Dashboard": {
+      "Title": "Dashboard",
+      "Headline": "Herzlich Willkommen",
+      "welcomeText": "Hier können Sie Ihre Einkaufslisten erstellen und bearbeiten:"
+    },
+    "Shopping": {
+      "Title": "Einkaufen",
+      "Headline": "Willkommen in Einkaufen"
+    },
+    "ShoppingList": {
+      "Title": "Einkaufsliste"
+    }
+  },
+  "error404": "404 Error",
+  "angularShoppingListsApp": "Einkaufslisten App",
+  "shoppingLists": "Einkaufslisten",
+  "shoppingListCreated": "Einkaufsliste ist erstellt",
+  "saved": "Gespeichert",
+  "shoppingListRemoved": "Einkaufsliste ist gelöscht",
+  "shoppingListDefault": "Es ist eine Standard-Einkaufsliste, Sie können sie nicht löschen",
+  "createShoppingList": "Einkaufsliste erstellen",
+  "removeShoppingList": "Einkaufsliste löschen",
+  "areYouSure": "Sind Sie sicher?",
+  "name": "Name",
+  "create": "Erstellen",
+  "yes": "Ja",
+  "no": "Nein",
+  "availableProducts": "Verfügbare Produkte",
+  "addToShoppingList": "Zur Einkaufsliste hinzufügen",
+  "productSearch": "Produktsuche",
+  "productAdded": "Das Produkt wurde hinzugefügt",
+  "productRemovedFromShoppingList": "Das Produkt wurde entfernt",
+  "removeFromShoppingList": "Aus der Einkaufsliste entfernen",
+  "shoppingListName": "Shopping list name",
+  "save": "Speichern"
+}

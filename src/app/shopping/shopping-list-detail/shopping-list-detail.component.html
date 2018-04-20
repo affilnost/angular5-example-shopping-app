@@ -1,0 +1,73 @@
+<div class="twoColFlex">
+  <div class="col left-col">
+    <div>
+      <h2 class="section-title sl-title">
+        <span>{{'Pages.ShoppingList.Title' | translate}} &ldquo;<span *ngIf="shoppingList">{{shoppingList.name}}</span>&rdquo;</span>
+        <mat-icon class="edit-icon"
+                  (click)="editShoppingListName()">
+          edit
+        </mat-icon>
+      </h2>
+    </div>
+
+    <div>
+      <mat-progress-spinner *ngIf="!shoppingList"
+                            class="progress-spinner"
+                            [color]="'primary'"
+                            [mode]="'indeterminate'">
+      </mat-progress-spinner>
+      <div class="editname-form-container">
+        <form [ngClass]="{'invisible': !listNameEditMode}" [formGroup]="editShoppingListNameForm" #form="ngForm" (ngSubmit)="saveShoppingListName(editShoppingListNameForm.value)">
+          <mat-form-field [ngClass]="{'invisible': !listNameEditMode}">
+            <input matInput formControlName="shoppingListName" type="text" [ngModel]="shoppingList.name" placeholder="{{ 'shoppingListName' | translate }}"/>
+          </mat-form-field>
+          <button mat-raised-button type="submit" [disabled]="!editShoppingListNameForm.valid" [ngClass]="{'invisible': !listNameEditMode, 'save-btn': true}">
+            {{ 'save' | translate}}
+          </button>
+        </form>
+      </div>
+
+
+      <mat-card class="product-card" *ngFor="let slProduct of shoppingListProducts">
+        <mat-card-title-group>
+          <mat-card-title>{{ slProduct.name }}</mat-card-title>
+          <mat-card-subtitle>{{ slProduct.price }}</mat-card-subtitle>
+          <img mat-card-lg-image src="{{ slProduct.imgUrl}}"/>
+        </mat-card-title-group>
+
+        <button mat-raised-button (click)="removeProductFromShoppingList(slProduct)">
+          <mat-icon class="remove-icon">remove</mat-icon>
+          {{ 'removeFromShoppingList' | translate}}
+        </button>
+
+      </mat-card>
+    </div>
+  </div>
+  <div class="col right-col">
+    <h2 class="section-title">{{ 'availableProducts' | translate }}</h2>
+    <div>
+      <mat-progress-spinner *ngIf="!products"
+                            class="progress-spinner"
+                            [color]="'primary'"
+                            [mode]="'indeterminate'">
+      </mat-progress-spinner>
+      <mat-form-field>
+        <input matInput type="text" placeholder="{{ 'productSearch' | translate }}" (input)="getProducts()" [(ngModel)]="search"/>
+      </mat-form-field>
+      <mat-card class="product-card" *ngFor="let product of products">
+        <mat-card-title-group>
+          <mat-card-title>{{ product.name }}</mat-card-title>
+          <mat-card-subtitle>{{ product.price }}</mat-card-subtitle>
+          <img mat-card-lg-image src="{{ product.imgUrl}}"/>
+        </mat-card-title-group>
+
+        <button mat-raised-button (click)="addProductToCurrentList(product)">
+          <mat-icon class="add-icon">add</mat-icon>
+          {{ 'addToShoppingList' | translate}}
+        </button>
+
+      </mat-card>
+    </div>
+  </div>
+</div>
+
