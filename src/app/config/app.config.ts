@@ -12,5 +12,6 @@ export const AppConfig = {
     productsGetPath: '/v2/images/search'
 
   },
-  snackBarDuration: 3000
+  snackBarDuration: 3000,
+  repositoryURL: 'https://github.com/affilnost/angular5-example-shopping-app'
 };
