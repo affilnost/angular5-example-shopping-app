@@ -64,10 +64,6 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 * If it's a small fix - just send a pull-request
 
 ## Deploying to GitHub Pages
-First build the project for GitHub Pages:
-`npm run build-gh`
-
-Then run:
 `npm run deploy-to-ghpages`
 
 ## License

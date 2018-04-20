@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "build-gh": "ng build --prod --base-href \"/angular5-example-shopping-app/\"",
-    "deploy-to-ghpages": "ngh",
+    "deploy-to-ghpages": "npm run build-gh && ngh",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
