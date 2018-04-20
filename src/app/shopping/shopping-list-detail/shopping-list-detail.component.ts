@@ -26,8 +26,17 @@ export class ShoppingListDetailComponent {
     this.activatedRoute.params.subscribe((params: any) => {
       if (params['id']) {
         this.shoppingList = this.shoppingService.getShoppingListById(params['id']);
-        this.shoppingListProducts = this.shoppingService.getProductsByShoppingList(this.shoppingList);
+      } else {
+        if (this.shoppingService.isThereShoppingLists()) {
+          // if there are any shopping lists - get the first one
+          this.shoppingList = this.shoppingService.getFirstShoppingList();
+
+        } else {
+          // if there are no shopping lists
+          this.shoppingList = this.shoppingService.initShoppingListsWithDefault();
+        }
       }
+      this.shoppingListProducts = this.shoppingService.getProductsByShoppingList(this.shoppingList);
     });
 
     this.shoppingService.getProducts().subscribe((products: Array<Product>) => {

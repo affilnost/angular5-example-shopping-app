@@ -8,8 +8,8 @@ import {SharedModule} from '../shared/shared.module';
 
 import {ShoppingListsComponent, RemoveShoppingListDialogComponent} from './shopping-lists/shopping-lists.component';
 import {ShoppingService} from './shared/shopping.service';
-import {ShoppingListDetailComponent} from './shopping-list-detail/shopping-list-detail.component';
 import {ShoppingComponent} from './shopping.component';
+import {SharedComponentsModule} from '../shared/shared-components.module';
 
 
 @NgModule({
@@ -18,12 +18,12 @@ import {ShoppingComponent} from './shopping.component';
     FormsModule,
     SharedModule,
     ShoppingRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedComponentsModule
   ],
   declarations: [
     ShoppingComponent,
     ShoppingListsComponent,
-    ShoppingListDetailComponent,
     RemoveShoppingListDialogComponent
   ],
   entryComponents: [

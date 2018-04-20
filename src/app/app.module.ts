@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 // Material
@@ -24,6 +24,10 @@ import {SharedModule} from './shared/shared.module';
 import {StateService} from './services/state/state.service';
 import {APP_CONFIG, AppConfig} from './config/app.config';
 
+import {ShoppingService} from './shopping/shared/shopping.service';
+import {CommonModule} from '@angular/common';
+import {SharedComponentsModule} from './shared/shared-components.module';
+
 
 @NgModule({
   declarations: [
@@ -31,10 +35,12 @@ import {APP_CONFIG, AppConfig} from './config/app.config';
     DashboardComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     CoreModule,
     TranslateModule.forRoot({
@@ -45,11 +51,13 @@ import {APP_CONFIG, AppConfig} from './config/app.config';
       }
     }),
     SharedModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    SharedComponentsModule
   ],
   providers: [
     {provide: 'state', useClass: StateService},
-    {provide: APP_CONFIG, useValue: AppConfig}
+    {provide: APP_CONFIG, useValue: AppConfig},
+    ShoppingService
   ],
   bootstrap: [AppComponent]
 })

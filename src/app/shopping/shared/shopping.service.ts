@@ -22,12 +22,14 @@ export class ShoppingService {
   private shoppinglistPrefix: string;
   private shoppinglistsPrefix: string;
   private maxTitleLength: number;
+  private defaultSL: object;
 
   constructor(private http: HttpClient,
               private translateService: TranslateService,
               private snackBar: MatSnackBar) {
     this.productsGetUrl = AppConfig.endpoints.productsBaseUrl + AppConfig.endpoints.productsGetPath;
     this.productsBaseUrl = AppConfig.endpoints.productsBaseUrl;
+    this.defaultSL = AppConfig.defultSHContent;
     this.shoppinglistPrefix = 'shopping-list-';
     this.shoppinglistsPrefix = 'shopping-lists';
     this.maxTitleLength = 50;
@@ -97,6 +99,30 @@ export class ShoppingService {
     let slProducts = this.getProductsByShoppingList(shoppingList);
     slProducts = slProducts.filter(sl => sl.id !== product.id);
     localStorage.setItem(this.shoppinglistPrefix + shoppingList.id, JSON.stringify(slProducts));
+  }
+
+  isThereShoppingLists(): boolean {
+    if (!this.getAllShoppingLists().length) {
+      return false;
+    }
+    return true;
+  }
+
+  getFirstShoppingList(): ShoppingList {
+    const shLists = this.getAllShoppingLists();
+    if (shLists.length) {
+      return shLists[0];
+    } else {
+      return null;
+    }
+  }
+
+  initShoppingListsWithDefault(): ShoppingList {
+    const shoppingList = new ShoppingList(0, 'Default');
+    const shoppingLists = [shoppingList];
+    localStorage.setItem(this.shoppinglistsPrefix, JSON.stringify(shoppingLists));
+    localStorage.setItem(this.shoppinglistPrefix + 0, this.defaultSL);
+    return shoppingList;
   }
 
   getAllShoppingLists(): ShoppingList[] {

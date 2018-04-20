@@ -1,12 +1,12 @@
-<div fxLayout="row">
-  <div fxFlex="10" fxFlex.gt-sm="20"></div>
-  <div fxFlex="90" fxFlex.gt-sm="80">
-    <h1 class="section-title">{{ 'Pages.Dashboard.Headline' | translate}}</h1>
-    <br>
-    <p>{{ "Pages.Dashboard.welcomeText" | translate }} <a routerLink="/shopping">{{ "Pages.Shopping.Title" | translate }}</a>.</p>
-    <mat-card class="welcome-card">
-      <img mat-card-image src="https://media.giphy.com/media/SKGo6OYe24EBG/giphy.gif">
-    </mat-card>
+<mat-card class="main-dashboard-card">
+  <div fxLayout="row">
+    <div fxFlex="10" fxFlex.gt-sm="20"></div>
+    <div fxFlex="90" fxFlex.gt-sm="80">
+      <h1 class="section-title">{{ 'Pages.Dashboard.Headline' | translate}}</h1>
+      <p>{{ "Pages.Dashboard.welcomeText" | translate }} <a routerLink="/shopping">{{ "Pages.Shopping.Title" | translate }}</a>.</p>
+    </div>
+    <div fxFlex="10" fxFlex.gt-sm="20"></div>
   </div>
-  <div fxFlex="10" fxFlex.gt-sm="20"></div>
-</div>
+</mat-card>
+
+<app-shopping-list-detail></app-shopping-list-detail>
