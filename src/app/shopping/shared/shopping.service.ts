@@ -22,7 +22,7 @@ export class ShoppingService {
   private shoppinglistPrefix: string;
   private shoppinglistsPrefix: string;
   private maxTitleLength: number;
-  private defaultSL: object;
+  private defaultSL: string;
 
   constructor(private http: HttpClient,
               private translateService: TranslateService,
