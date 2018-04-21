@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '9.10'
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install
+
+script:
+  - npm run build
