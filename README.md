@@ -1,6 +1,6 @@
 # Angular 5 Example Shopping App + Angular Material + Responsive 
 
-> ### Project made with :heart: 
+> ### Made with :heart: 
 
 [![Join the chat at https://gitter.im/Angular-5-Example-Shopping-App/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Angular-5-Example-Shopping-App/Lobby)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
