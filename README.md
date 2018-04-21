@@ -6,7 +6,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
-[![Build Status](https://travis-ci.org/tbopec/angular5-example-shopping-app.svg?branch=master](https://travis-ci.org/tbopec/angular5-example-shopping-app.svg?branch=master)
+[![Build Status](https://travis-ci.org/tbopec/angular5-example-shopping-app.svg?branch=master)](https://travis-ci.org/tbopec/angular5-example-shopping-app.svg?branch=master)
 
 ## [LIVE DEMO](https://affilnost.github.io/angular5-example-shopping-app/)
 [![angular-example-shopping-app](https://goo.gl/kjy8Ph)](https://affilnost.github.io/angular5-example-shopping-app/)
