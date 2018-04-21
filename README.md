@@ -60,8 +60,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 * Navigation: Add breadcrumbs, "Back" buttons
 
 ## Contributing
-* Create an issue with bug/feature description
-* If it's a small fix - just send a pull-request
+Please see the CONTRIBUTING file for guidelines.
 
 ## Deploying to GitHub Pages
 `npm run deploy-to-ghpages`
