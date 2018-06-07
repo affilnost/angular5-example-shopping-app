@@ -46,11 +46,11 @@
   }
 }
 
-@media (max-width: 807px) {
-  #today {
-    width: 50%;
-  }
+.title{
+    font-weight: bold;
+    font-size: x-large;
 }
+
 
 @media (max-width: 680px) {
   :host(app-nav) {
@@ -70,8 +70,16 @@
         }
 
         #today {
-          margin-top: 1em;
+          margin-top: 2em;
         }
+      }
+    }
+  }
+
+  :host(app-header) {
+    header {
+      nav {
+          height: 10em;
       }
     }
   }
