@@ -1,12 +1,12 @@
 <header>
   <nav>
     <div fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
-      <div fxFlex="40" fxLayout.xs="row" fxLayoutAlign="left right">
+      <div fxFlex="50" fxLayout.xs="row" fxLayoutAlign="left right">
         <a mat-raised-button *ngFor="let item of menuItems" routerLink="{{item.link}}">
           {{item.name | uppercase}}
         </a>
       </div>
-      <div fxFlex="20" id="today" class="text-center">
+      <div fxFlex="10" id="today" class="text-center">
         <span ng-show="title || false" class="title">{{ title }}</span>
       </div>
       <div fxFlex="40" class="text-right">
